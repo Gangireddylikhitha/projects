@@ -1,0 +1,702 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="../bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+<style>
+@media screen and (min-width:600px) {
+     
+
+    *{
+        box-sizing:border-box;
+        margin:0px;
+        padding: 0px;
+    }
+    main{
+        width:100%;
+    }
+    .photos>div:hover{
+
+box-shadow: 2vh 2vh 10vh gray;
+}
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    
+    header{
+    
+        background-color: rgb(44, 44, 44);
+        width:100%;
+        height:10vh;
+        color:rgb(236, 233, 233);
+
+        display:flex;
+        position: fixed;
+        top:0px;
+        z-index:1;
+    }
+
+
+    .six{
+        margin-left: 4%;
+        margin-top:1%;
+    }
+    .cloth{
+        color: red; 
+        margin-top:1%;
+    
+           
+    }
+     a{
+      text-decoration: none;  
+      color: white;
+    }
+    .home{
+        display : flex;
+
+     margin-top: 1%;
+     margin-left:25%; 
+
+
+    }
+
+    .home p{
+        
+        margin-left:50px;
+     padding-right: 1px; 
+    
+    }
+.bt h1{
+    font-size:50px;
+}
+.bt h3{
+    color:red;
+}
+
+.latest{
+display:flex;
+
+}
+ .all{
+margin-left: 80%;
+margin-top: -4%;
+color: red;
+font-size: 15px;
+
+} 
+
+#photos {
+
+    width:100%;
+    height:100%;
+    display:grid;
+    grid-template-columns:repeat(3,30%);
+    grid-template-rows: repeat(2,60vh);
+    grid-gap:4%;
+
+}
+.photos img{
+
+    width: 100%;
+
+}
+.photos i,span{
+
+    color: red;
+}
+.pic1 img{
+    width:100%;
+}
+
+
+
+.pic1 h3{
+    color:rgb(30, 114, 140);
+    margin-left: 2%;
+    margin-top: 5%;
+    font-size: 20px;
+}
+
+.photos em{
+    
+    color:black;
+    margin-left: 50%;
+     /* font-size: 20px;  */
+}
+.pic1 .review{
+    
+ margin-left: 66%;
+ margin-top:-10%;
+ color: red;
+   
+}
+.pic1 h6{
+    
+    margin-left: 75%;
+    margin-top:-8%;
+    color: rgb(18, 18, 18);
+      
+   }
+
+ .pic1{
+border:1px solid rgb(207, 201, 201);
+width:100%;
+    margin-left:1%;
+    display:inline;
+    display: flex;
+    flex-direction: column;
+} 
+
+ .para1{
+    width:100%;
+    height:100%;
+
+    margin-left:2%; 
+    margin-top:5%;
+    font-size: 15px;
+
+} 
+
+.para1 i{
+    color: red
+}
+.para2{
+      width:160%;
+      margin-left:2%;
+} 
+#read{
+
+    
+    width:40%;
+    height:5vh;
+    background-color: red;
+    text-align: center;
+    margin-top:6%;
+    margin-left:10%;
+    align-content: center;
+}
+#about{
+    margin-left:2%;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+.looking{
+    color:teal
+}
+.lastpic img{
+    margin-left: 80%;
+    width:100%;
+    height:70%;
+    margin-top:15%;
+} 
+footer{
+    border: 1px solid;
+    width:98vw;
+    height:20vh;
+    background-color: rgb(238, 233, 233);
+    margin-left: 1%;
+}
+.create{
+width:98vw;
+margin-top: 1%;
+
+
+}
+.purchase{
+    border:1px solid;
+    margin-left:80%;
+    
+    margin-top:-6%; 
+        width:17%;
+        height:5vh;
+        text-align: center;
+        background-color: red;
+}
+
+.icon i{
+
+    position:relative;
+    border: 1px solid rgb(196, 52, 52);
+    left: 20%;
+    display: none;
+   } 
+
+.foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:97vw;
+    height:40vh;
+}
+.home a:hover{
+        background-color: rgb(138, 134, 134);
+        height:15vh;
+    }
+}
+@media screen and (max-width:600px){
+    *{
+        box-sizing:border-box;
+        margin:0px;
+        padding:0px;
+    }
+    main{
+        width:100%;
+      
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    header{
+    
+        background-color: rgb(44, 44, 44);
+        width:100%;
+        height:10vh;
+        color:rgb(236, 233, 233);
+    
+        display:flex;
+        position:fixed;
+        top:0px;
+        justify-content: space-between;
+        z-index:1;
+        
+    }
+
+
+    .six{
+        margin-left: 4%;
+        margin-top:1%;
+    }
+    .cloth{
+        color: red; 
+        margin-top:1%;
+    
+           
+    }
+
+    a{
+      text-decoration: none;  
+      color: white;
+    }
+
+    .home{
+    
+    width:100%;
+    margin-top: 1%;
+    margin-left:10%;
+    display:none;
+    
+    }
+
+    .home a{
+     padding-right: 40px; 
+     font-size: 15px;
+    
+    }
+.list{
+
+}
+
+
+ .img{
+    width:100%;
+    height:100%;
+}
+
+ 
+
+.latest{
+display:flex;
+
+
+}
+ .all{
+margin-left: 70%;
+margin-top: -5%;
+color: red;
+font-size: 10px;
+
+}               
+
+.photos{
+    width:100%;
+    height:100%;                    
+    display:grid;
+    grid-template-columns:repeat(1,100%);   
+    grid-template-rows: repeat(6,60vh);    
+    
+} 
+.photos img{
+    
+    width: 100%;
+    height: 100%;
+}
+
+.photos i,span{
+ 
+    color: red;
+    border: pink;
+}
+
+ 
+.pic1 h3{
+    color:teal;
+    margin-left: 2%;
+}
+.photos em{
+    
+    color:black;
+    margin-left: 50%;
+    
+}
+.pic1 .review{
+    
+ margin-left: 65%;
+ margin-top:-7%;
+ color: red;
+ padding-bottom: 5%;
+   
+}
+.pic1 h6{
+    
+    margin-left: 75%;
+    margin-top:-5%;
+    color: rgb(18, 18, 18);
+      
+   }
+
+
+ .pic1 img{
+border:1px solid rgb(207, 201, 201);
+width:100%;
+height:100%;
+    margin-left:1%;
+/*     
+    display: flex;
+    flex-direction: column; */
+    
+}  
+.pic1:hover{
+    box-shadow: 1vh 1vh 10vh red;
+}
+.para1{
+    width:100%;
+    height:100%;
+    margin-left:2%; 
+    margin-top:5%;
+    font-size: 15px;
+
+}
+.para1 i{
+    color:red;
+    padding-bottom: 5%;
+}
+
+.para2{
+      width:100%;
+      margin-left:2%;
+} 
+#read{
+
+    
+    width:30%;
+    height:5vh;
+    background-color: red;
+    text-align: center;
+    margin-top:6%;
+    margin-left:10%;
+    align-content: center;
+}
+#about{
+    margin-left:2%;
+    font-family:Arial, Helvetica, sans-serif;
+
+    
+}
+
+.looking{
+    color:teal;
+    font-size: 20px;
+}
+.lastpic img{
+    
+    width:100%;
+    height:60vh;
+    margin-top:15%;
+} 
+footer{
+    border: 1px solid;
+
+    height:30vh;
+    background-color: rgb(238, 233, 233);
+    font-size: 10px;
+    display:flex;
+
+    
+}
+.create{
+
+margin-top:5%;
+margin-left: 5%;
+font-size: 15px;
+
+}
+.purchase{
+    border:1px solid;
+    margin-left:30%;
+    
+    margin-bottom:2%; 
+        width:40%;
+        height:5vh;
+        text-align:  center;
+        background-color: red;
+        
+}
+
+.icon{
+    margin-right: 6%;
+     margin-top: 2%;
+     
+}
+
+.photos>div:hover{
+
+    box-shadow: 2vh 2vh 10vh gray;
+}
+
+
+footer h3{
+    
+    font-size: 20px;
+    
+}
+
+}
+</style>
+
+
+
+
+
+</head>
+<body>
+<main>
+    <header>
+        <h2 class="six"> SIXTEEN<span>CLOTHING</span></h2>
+        
+        <nav class="icon">
+            <a href=""><i class="fa-solid fa-bars fa-xl"></i></a> 
+        
+      <!-- <ul class="list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Our Product</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </li>
+  </ul> -->
+            </nav>
+
+      <div class="home">     
+           <p><a href="./project1.html">Home</a></p>
+           <p><a href="#photos">Products</a></p>
+           <p><a href="./project.html/about.html" target="_blank">About</a></p>
+           <p><a href="./project.html/contact.html">Contact</a></p>
+
+      </div>
+      
+    </header> 
+<div class="bt">
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+            
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/slide_01.jpg"  class="d-block" style="width:100%">
+                <div class="carousel-caption">
+                  <h3>BEST OFFERS</h3>
+                  <h1>NEW ARRIVALS ON SALE</h1>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/slide_02.jpg"  class="d-block" style="width:100%">
+                <div class="carousel-caption">
+                  <h3>Chicago</h3>
+                  <p>Thank you, Chicago!</p>
+                </div> 
+              </div>
+              <div class="carousel-item">
+                <img src="./images/slide_03.jpg" class="d-block" style="width:100%">
+                <div class="carousel-caption">
+                  <h3>New York</h3>
+                  <p>We love the Big Apple!</p>
+                </div>  
+              </div>
+            </div>
+           </div>
+        </div>
+
+<section>
+
+    <h2><div class="latest">Latest Products</div></h2>
+    <h3><div class="all">VIEW ALL PRODUCTS></div></h3>
+</section><hr>
+
+<section id="photos">
+    <div class="pic1">
+        <img src="../css/images/project1/product_01.jpg">
+        <h3>Tittle goes here</h3>
+        <h6>$25.75</h6> 
+    <div class="para1">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing Minus consequuntur assumenda placeat </p>
+       <div>
+         <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <h6 class="review">Reviews(34)</h6>
+   
+    </div>
+           </div>  
+    </div>
+    <div class="pic1">
+        <img src="../css/images/project1/product_02.jpg" alt="">
+        <h3>Tittle goes here</h3>
+        <h6>$30.25</h6>
+    
+        <div class="para1">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing Minus consequuntur assumenda placeat </p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <h6 class="review">Reviews(34)</h6>         
+         </div>  
+    </div>
+    <div class="pic1">
+        <img src="../css/images/project1/product_03.jpg">
+        <h3> Tittle goes here</h3>
+            <h6>$20.45</h6>
+    
+        <div class="para1">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing Minus consequuntur assumenda placeat </p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <h6 class="review">Reviews(34)</h6>
+          </div>  
+    </div>
+    <div class="pic1">
+        <img src="../css/images/project1/product_04.jpg">
+        <h3>Tittle goes here</h3>
+        <h6>$15.25</h6>
+  
+        <div class="para1">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing Minus consequuntur assumenda placeat </p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <h6 class="review">Reviews(34)</h6>
+          </div>  
+    </div>
+    <div  class="pic1">
+        <img src="../css/images/project1/product_05.jpg">
+        <h3> Tittle goes header</h3>
+        <h6>$12.50</h6>
+  
+        <div class="para1">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing  Minus consequuntur assumenda placeat </p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <h6 class="review">Reviews(34)</h6>
+          </div>  
+    </div>
+    <div  class="pic1">
+        <img src="../css/images/project1/product_06.jpg">
+        <h3>Tittle goes here</h3>
+        <h6>$22.50</h6>
+        <div class="para1">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing <br> Minus consequuntur assumenda placeat </p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <h6 class="review">Reviews(34)</h6>
+          </div>  
+    </div>
+
+
+<section>
+    <h2 id="about">About Sixteen Clothing</h2><hr>
+
+
+<div class="para2">
+<h1><div class="looking">Looking for the best products?</div></h1>
+<p>this template is free to use for your  bussiness website<br> redistribute downlable zip file <br>on any tempkate collection website<br>.contact us for more info</p>
+
+<ul type="square">
+    <li>Lorem ipsum dolor, sit ametquit</li>
+    <li>consectetur adipisicing elit. </li>
+    <li>Natus sequi, eius excepturi labore </li>
+    <li>itaque praesentium cum esse neque ex minus</li>
+    <li>facere quia placeat aliquid illum iste</li>
+</ul>
+</div>
+
+    <div id="read">Read More</div>
+
+</section>
+
+<section class="lastpic">
+    <img src="../css/images/feature-image.jpg">
+</section>
+<hr style="visibility: hidden;">
+<div class="foot">
+    
+
+<footer>
+        <section class="create">
+            <h3><div>Creative&Unique<strong>Sixteen</strong>Products?</div></h3>
+           <p><div class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit eos facilis</div></p>
+       
+       
+        <div class="purchase">Purchase Now</div>
+    </section> 
+    </footer>
+
+</div>
+
+</div>
+</div>
+
+</section>
+</main>
+</body>
+</html>

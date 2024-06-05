@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+        box-sizing:border-box;
+        margin:0px;
+        padding: 0px;
+    }
+    main{
+        width:100%;
+    }
+    body{
+        background-image: url(../images/services-bg.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    
+    header{
+    
+        background-color: rgb(44, 44, 44);
+        width:100%;
+        height:10vh;
+        color:rgb(236, 233, 233);
+
+        display:flex;
+        position: fixed;
+        top:0px;
+        z-index:1;
+    }
+
+
+    .six{
+        margin-left: 4%;
+        margin-top:1%;
+    }
+    .cloth{
+        color: red; 
+        margin-top:1%;
+    
+           
+    }
+     a{
+      text-decoration: none;  
+      color: white;
+    }
+    .home{
+        display : flex;
+     margin-top: 2%;
+     margin-left:26%; 
+        
+
+    }
+
+    .home p{
+        
+        margin-left:50px;
+     padding-right: 1px; 
+    
+    }
+    .home a:hover{
+        background-color: rgb(138, 134, 134);
+        
+    }
+    span{
+        color:red;
+    }
+    .caption h2{
+        
+    display: flex;
+    justify-content: center;
+    margin-top:-20%;
+    padding:3%;
+        font-size:30px;
+}
+.caption h1{
+
+color:white;
+display:flex;
+justify-content: center;
+font-size: 40px;
+}
+.caption img{
+    width:100%;
+
+    
+    background-color: white;
+
+}
+.map h1{
+   margin-top:15%;
+   padding:2%;
+   background-color: white;
+}
+.map img{
+    width:50%;
+    height:70vh;
+    padding:3%;
+    background-color: white;
+}
+.office{
+    display: flex;
+     flex-direction: column;
+    margin-left: 50%;
+    margin-top:-30%;
+    width:50%;
+    height:60vh;
+    background-color: white;
+}
+ .office h2{
+    margin-left: 3%;
+    color: teal;
+
+} 
+.office p{
+    padding:4%;
+
+}
+.icons{
+    padding:5%;
+    
+}
+
+.icons i{
+    margin-left:5%;
+    margin-top:4%;
+    color: rgb(58, 56, 56);
+    background-color: rgb(180, 175, 175);
+    width: 8%;
+    height:8vh;
+    text-align: center;
+  
+}
+.bars{
+    display: none;
+}
+.team{
+    padding:4%;
+    background-color: white;
+}
+ .photos{
+    background-color: white;
+
+    width:100%;
+    padding:3%;
+    display:grid;
+    grid-template-columns:repeat(3,30%);
+    grid-template-rows: repeat(2,60vh);
+    grid-gap:4%;
+   grid-row-gap: 60px;
+    
+
+ } 
+ 
+.pic1{
+    border:1px solid rgb(214, 209, 209);
+    width:100%;
+    height:65vh;
+    
+}
+ .pic1 img{
+    width:100%;
+    
+ }
+.pic1 h2{
+    color:teal;
+    padding:3%;
+    margin-left: 27%;
+}
+ 
+.pic1 h3{
+    color:red;
+    margin-left:33%;
+}
+.pic1 p{
+    padding:3%;
+    margin-left:15%;
+}
+hr{
+   opacity:0.5;
+   
+}
+.happy{
+    margin-top:13%;
+    padding:2%;
+    background-color: white;
+
+}
+.happy h1{
+    padding:3%;
+}
+.happy img{
+    padding:1%;
+    margin-top:5%;
+    
+}
+.happy p{
+
+    padding:10%;
+
+    margin-top:10%;
+    margin-left:20%;
+    font-size: 10px;
+    
+}
+
+@media screen and (max-width:430px) {
+    main{
+        width:100%;
+    }
+    body{
+        background-image: url(../images/services-bg.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .six{
+        margin-top:3%;
+    }
+    
+    .home{
+        display : flex;
+     margin-top: 2%;
+     margin-left:26%; 
+     display: none;
+        
+    }
+    .caption img{
+        width:100%;
+        height:30vh;
+    }
+    .bars{
+        margin-left:30%;
+        margin-top: 3%;
+    }
+
+    .map img{
+    width:100%;
+    height:70vh;
+    padding:3%;
+    background-color: white;
+}
+.office{
+    display: flex;
+     flex-direction: column;
+    margin-left: 0%;
+    margin-top:-1%;
+    width:100%;
+    height:80vh;
+    background-color: white;
+}
+ .office h2{
+    margin-left: 3%;
+    color: teal;
+
+} 
+.office p{
+    padding:4%;
+
+}
+.icons{
+    padding:5%;
+    
+}
+
+.icons i{
+    margin-left:5%;
+    margin-top:4%;
+    color: rgb(95, 93, 93);
+    background-color: rgb(194, 188, 188);
+    width: 10%;
+    height:10vh;
+    text-align: center;
+  
+}
+.photos{
+    background-color: white;
+
+    width:100%;
+    padding:3%;
+    display:grid;
+    grid-template-columns:repeat(1,100%);
+    grid-template-rows: repeat(6,70vh);
+    grid-gap:4%;
+   grid-row-gap: 60px;
+    
+
+ } 
+  
+.pic1{
+    border:1px solid rgb(214, 209, 209);
+    width:100%;
+    height:90vh;
+    background-color: white;
+    
+}
+.happy img{
+    width:100%;
+    padding:1%;
+    margin-top:3%;
+    
+}
+.pic1 h2{
+    color:teal;
+    padding:3%;
+    margin-left: 27%;
+}
+ 
+.pic1 h3{
+    color:red;
+    margin-left:30%;
+}
+.pic1 p{
+    padding:3%;
+    margin-left:15%;
+}
+.happy p{
+    
+    padding:10%;
+    width:100%;
+    margin-top:4%;
+    margin-left:5%;
+    font-size: 10px;
+    
+}
+.caption h2{
+    margin-top:-27%;
+}
+}
+
+
+</style>
+<body>
+    <header>
+        <h2 class="six"> SIXTEEN<span>CLOTHING</span></h2>
+
+        <div class="bars">
+            <a href=""><i class="fa-solid fa-bars fa-xl"></i></a>
+        </div>
+       
+      <div class="home">     
+           <p><a href="../project1.html">Home</a></p>
+           <p><a href="../project1.html">Products</a></p>
+           <p><a href="./about.html" target="_blank">About</a></p>
+           <p><a href="./contact.html">Contact</a></p>
+
+     
+   </header>
+
+   <div class="caption">
+    <img src="../images/more-info.jpg" width="100%">
+    <h2><span>ABOUT US</span></h2>
+    <h1>OUR COMPANY</h1>
+   </div>
+    
+   <section class="map">
+    <h1>Our Background</h1><br><hr>
+    <img src="../images/feature-image.jpg">  
+     <div class="office"> 
+    <h2>Who we are & What we do?</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptate nihil eum consectetur similique? Consectetur, quod, incidunt, harum nisi dolores delectus reprehenderit voluptatem perferendis dicta dolorem non blanditiis ex fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptate nihil eum consectetur similique? Consectetur, quod, incidunt, harum nisi dolores delectus reprehenderit voluptatem perferendis dicta dolorem non blanditiis ex fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <hr>
+
+    <div class="icons">
+
+        <i class="fa-brands fa-square-facebook fa-2x"></i>
+    
+        <i class="fa-brands fa-instagram fa-2x"></i>
+        
+        <i class="fa-brands fa-pinterest-p fa-2x"></i>
+        
+         <i class="fa-brands fa-linkedin-in fa-2x"></i>
+         </div>
+        </div>
+       
+    </section>
+
+    <h1 class="team">Our Team Members</h1><hr>
+
+    <div class="photos">
+
+    <div class="pic1">
+
+        <img src="../images/team_01.jpg" alt="">
+        <h2>Johny William</h2>
+        <h3>Co-Founder</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
+    </div>
+
+    <div class="pic1">
+
+        <img src="../images/team_02.jpg" alt="">
+        <h2>Karry Pitcher</h2>
+        <h3>Product Expert</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
+    </div>
+    
+    <div class="pic1">
+
+        <img src="../images/team_03.jpg" alt="">
+        <h2>Michael Soft</h2>
+        <h3>Chief Marketing</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
+</div>
+        <div class="pic1">
+
+         <img src="../images/team_04.jpg" alt="">
+        <h2>Mary Cool</h2>
+        <h3>Product specialist</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
+  </div>     
+<div class="pic1">
+
+        <img src="../images/team_05.jpg" alt="">
+        <h2>George Walker</h2>
+        <h3>Photographer</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
+</div>
+<div class="pic1">       
+    
+        <img src="../images/team_06.jpg" alt="">
+        <h2>Kate Town</h2>
+        <h3>General Manager</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
+</div>
+
+</div>
+<div class="happy">
+    <h1>Our Happy Customers</h1>
+    <hr>
+<img src="../images/client-01.png" alt="">
+<img src="../images/client-01.png" alt="">
+<img src="../images/client-01.png" alt="">
+<img src="../images/client-01.png" alt="">
+<img src="../images/client-01.png" alt="">
+<br>
+<br>
+<hr>
+
+<p>COPYRIGHT © 2020 SIXTEEN CLOTHING CO., LTD. - DESIGN: <span>TEMPLATEMO</span></p>
+
+
+
+</body>
+</html>
